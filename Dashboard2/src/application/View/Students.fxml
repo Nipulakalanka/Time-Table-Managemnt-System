@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.StudentController">
+   <left>
+      <AnchorPane prefHeight="426.0" prefWidth="242.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="academicyear" layoutX="33.0" layoutY="76.0" prefHeight="18.0" prefWidth="202.0" text="Academic Year Semester">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="gn" layoutX="33.0" layoutY="163.0" prefHeight="18.0" prefWidth="202.0" text="Group Number">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="prog" layoutX="33.0" layoutY="120.0" prefHeight="18.0" prefWidth="202.0" text="Programme">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="sgn" layoutX="33.0" layoutY="208.0" prefHeight="18.0" prefWidth="202.0" text="Sub Group Number">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="362.0" prefHeight="18.0" prefWidth="202.0" text="Sub Group ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="313.0" prefHeight="18.0" prefWidth="202.0" text="Group ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveStu" layoutX="72.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#Save" prefHeight="30.0" prefWidth="152.0" text="Save" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="429.0" prefWidth="441.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="generateSID" layoutX="-56.0" layoutY="259.0" mnemonicParsing="false" onAction="#GenerateId" prefHeight="30.0" prefWidth="152.0" text="GenerateID" />
+            <Button fx:id="clearStu" layoutX="43.0" layoutY="414.0" mnemonicParsing="false" onMouseClicked="#Clear" prefHeight="30.0" prefWidth="152.0" text="Clear" />
+            <TextField fx:id="GID" layoutX="22.0" layoutY="304.0" />
+            <TextField fx:id="SGID" layoutX="22.0" layoutY="350.0" />
+            <TextField fx:id="academicyearsemester" layoutX="53.0" layoutY="69.0" promptText="eg:Y1.S1" style="-fx-border-color: #80DEEA;" />
+            <TextField fx:id="programme" layoutX="53.0" layoutY="114.0" promptText="IT" style="-fx-border-color: #80DEEA;" />
+            <TextField fx:id="groupnumber" layoutX="53.0" layoutY="161.0" promptText="01" style="-fx-border-color: #80DEEA;" />
+            <TextField fx:id="subgroupnumber" layoutX="54.0" layoutY="205.0" promptText="01" style="-fx-border-color: #80DEEA;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
